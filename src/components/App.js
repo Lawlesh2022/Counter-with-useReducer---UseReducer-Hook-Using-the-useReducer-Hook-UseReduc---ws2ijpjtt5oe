@@ -12,7 +12,7 @@ const [state,dispatch] = useReducer(counterReducer, initialstate)
     }
   return (
     <div id="main">
-     <h1>Count-{state}</h1>
+     <span id = "counter">{state}</span>
         <button id = "increment-btn" onClick = {handleIncrement}>Increment</button>
         <button id = "decrement-btn" onClick = {handleDecrement}>Decrement</button>
     </div>
