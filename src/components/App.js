@@ -3,7 +3,7 @@ import { counterReducer } from '../reducers/counterReducer';
 import '../styles/App.css';
 const initialstate = 0;
 const App = () => {
-const [state,dispatch] = useReducer(counterReducer,{initialstate})
+const [state,dispatch] = useReducer(counterReducer, initialstate)
     const handleIncrement= () =>{
         dispatch({type: "increment"});
     }
